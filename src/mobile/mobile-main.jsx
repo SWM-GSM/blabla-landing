@@ -1,4 +1,5 @@
 import { useState } from "react";
+import DifferenceWidget from "./widgets/difference_widget";
 
 import { StrData as Kor } from "../languages/korean";
 import { StrData as Eng } from "../languages/english";
@@ -82,6 +83,64 @@ export default function MobileMain() {
           />
         </div>
       </div>
+
+      <div>
+        <DifferenceWidget
+          num="01"
+          title={strData[1].title}
+          subTitle={strData[1].subTitle}
+          imgBefore="imgs/img_200_contents.png"
+          imgBeforeDesc={strData[1].imgBeforeDesc}
+          imgAfter="imgs/img_200_writing.png"
+          imgAfterDesc={strData[1].imgAfterDesc}
+          desc={
+            <div className="text-sm text-medium flex flex-col items-center text-center">
+              <h6>
+                {strData[1].desc1[0]}
+                <span className="font-bold text-[#FF7F50]">
+                  {strData[1].desc1[1]}
+                </span>
+                {strData[1].desc1[2]}
+              </h6>
+              <br />
+              <h6>
+                {strData[1].desc2[0]}
+                <span className="font-bold text-[#FF7F50]">
+                  {strData[1].desc2[1]}
+                </span>
+                {strData[1].desc2[2]}
+              </h6>
+            </div>
+          }
+        />
+        <DifferenceWidget
+          num="02"
+          title={strData[2].title}
+          subTitle={strData[2].subTitle}
+          imgBefore="imgs/img_200_crew.png"
+          imgBeforeDesc={strData[2].imgBeforeDesc}
+          imgAfter="imgs/img_200_voiceroom.png"
+          imgAfterDesc={strData[2].imgAfterDesc}
+          desc={
+            <div className="text-sm text-medium flex flex-col items-center text-center">
+              <h6>
+                {strData[2].desc1[0]}
+                <span className="font-bold text-[#FF7F50]">
+                  {strData[2].desc1[1]}
+                </span>
+                {strData[2].desc1[2]}
+              </h6>
+              <br />
+              <h6>
+                {strData[2].desc2[0]}
+                <span className="font-bold text-[#FF7F50]">
+                  {strData[2].desc2[1]}
+                </span>
+                {strData[2].desc2[2]}
+              </h6>
+            </div>
+          }
+        />
       </div>
     </>
   );
