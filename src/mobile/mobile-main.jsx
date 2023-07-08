@@ -161,6 +161,41 @@ export default function MobileMain() {
           />
         </div>
 
+        <div className="flex flex-col items-center text-center pt-[40px] pb-[80px] whitespace-pre-line">
+          <img src="imgs/img_130_logo.png" className="w-[130px] my-[40px]" />
+          <h4 className="font-bold text-xl">
+            {strData[6].title}
+          </h4>
+          <h6 className="font-medium text-sm mt-[24px] mb-[20px]">
+            {strData[6].subTitle}
+          </h6>
+          <IconBtn
+            name={strData[6].btnName}
+            icon="logo"
+            onClick={() => {
+              window.open(
+                isLangEng
+                  ? process.env.REACT_APP_NOTIFICATION_ENG_LINK
+                  : process.env.REACT_APP_NOTIFICATION_KOR_LINK
+              );
+            }}
+          />
+          <div className="h-[80px]"></div>
+          <h4 className="font-bold text-xl">
+            {strData[7].title}
+          </h4>
+          <h6 className="font-medium text-sm mt-[24px] mb-[20px]">
+            {strData[7].subTitle}
+          </h6>
+          <IconBtn
+            name={strData[7].btnName}
+            icon="discord"
+            onClick={() => {
+              window.open(process.env.REACT_APP_DISCORD_LINK);
+            }}
+          />
+        </div>
+
       </div>
     </>
   );
