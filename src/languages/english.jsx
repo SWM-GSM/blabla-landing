@@ -1,6 +1,6 @@
 export const StrData = [
     {
-        title: "Let's practice KOREAN SPEACKING with AI\n and hang out with KOREAN friends",
+        title: "Let's practice KOREAN SPEAKING with AI\n and hang out with KOREAN friends",
         appName: "BLABLA",
         reserveBtnName: "reserve",
         serverBtnName: "discord",
