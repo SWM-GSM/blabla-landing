@@ -50,6 +50,38 @@ export default function MobileMain() {
           <div></div>
         )}
 
+        <div className="flex flex-col items-center my-[60px] text-center">
+          <h3 className="font-semibold text-2xl">{strData[0].title}</h3>
+          <h1 className="font-bold text-[30px] mt-[20px] mb-[24px]">
+            {strData[0].appName}
+          </h1>
+          <div className="flex flex-row justify-center">
+            <IconBtn
+              name={strData[0].reserveBtnName}
+              icon="logo"
+              onClick={() => {
+                window.open(
+                  isLangEng
+                    ? process.env.REACT_APP_NOTIFICATION_ENG_LINK
+                    : process.env.REACT_APP_NOTIFICATION_KOR_LINK
+                );
+              }}
+            />
+            <div className="w-[12px]"></div>
+            <IconBtn
+              name={strData[0].serverBtnName}
+              icon="discord"
+              onClick={() => {
+                window.open(process.env.REACT_APP_DISCORD_LINK);
+              }}
+            />
+          </div>
+          <img
+            src="imgs/img_280_home.png"
+            className="w-[280px] mt-[56px] mb-[20px]"
+          />
+        </div>
+      </div>
       </div>
     </>
   );
