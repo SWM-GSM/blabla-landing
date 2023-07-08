@@ -35,7 +35,7 @@ export const StrData = [
     },
     {
         title: "Do you want to use\nBLABLA \nfor APP(Android/iOS)?",
-        subTitle: "Apply for BLABLA launch alarm 👇👇",
+        subTitle: "Apply for BLABLA launch alarm 👇",
         btnName: "reserve",
     },
     {
