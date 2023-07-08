@@ -1,6 +1,8 @@
 import { useState } from "react";
 import DifferenceWidget from "./widgets/difference_widget";
 import ProsWidget from "./widgets/pros-widget";
+import IconBtn from "./widgets/icon-btn";
+import Footer from "./widgets/footer-widget";
 
 import { StrData as Kor } from "../languages/korean";
 import { StrData as Eng } from "../languages/english";
@@ -196,6 +198,7 @@ export default function MobileMain() {
           />
         </div>
 
+        <Footer />
       </div>
     </>
   );
