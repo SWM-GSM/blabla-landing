@@ -1,5 +1,6 @@
 import { useState } from "react";
 import DifferenceWidget from "./widgets/difference_widget";
+import ProsWidget from "./widgets/pros-widget";
 
 import { StrData as Kor } from "../languages/korean";
 import { StrData as Eng } from "../languages/english";
@@ -141,6 +142,25 @@ export default function MobileMain() {
             </div>
           }
         />
+
+        <div className="flex flex-col items-center bg-[#FBFBFB] py-[40px]">
+          <ProsWidget
+            img="shake"
+            title={strData[3].title}
+            desc={strData[3].subTitle}
+          />
+          <ProsWidget
+            img="human"
+            title={strData[4].title}
+            desc={strData[4].subTitle}
+          />
+          <ProsWidget
+            img="data"
+            title={strData[5].title}
+            desc={strData[5].subTitle}
+          />
+        </div>
+
       </div>
     </>
   );
