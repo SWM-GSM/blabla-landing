@@ -71,14 +71,14 @@ export default function MobileMain() {
                 );
               }}
             />
-            <div className="w-[12px]"></div>
+            {/* <div className="w-[12px]"></div>
             <IconBtn
               name={strData[0].serverBtnName}
               icon="discord"
               onClick={() => {
                 window.open(process.env.REACT_APP_DISCORD_LINK);
               }}
-            />
+            /> */}
           </div>
           <img
             src="imgs/img_280_home.png"
@@ -182,20 +182,20 @@ export default function MobileMain() {
               );
             }}
           />
-          <div className="h-[80px]"></div>
+          {/* <div className="h-[80px]"></div>
           <h4 className="font-bold text-xl">
             {strData[7].title}
           </h4>
           <h6 className="font-medium text-sm mt-[24px] mb-[20px]">
             {strData[7].subTitle}
-          </h6>
-          <IconBtn
+          </h6> */}
+          {/* <IconBtn
             name={strData[7].btnName}
             icon="discord"
             onClick={() => {
               window.open(process.env.REACT_APP_DISCORD_LINK);
             }}
-          />
+          /> */}
         </div>
 
         <Footer />
